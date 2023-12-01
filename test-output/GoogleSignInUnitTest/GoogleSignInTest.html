@@ -1,0 +1,431 @@
+<html>
+<head>
+<title>TestNG:  GoogleSignInTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>GoogleSignInTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/1/5</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 20 18:42:53 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>263 seconds (263093 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.testGoogleSignIn()'><b>testGoogleSignIn</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DESKTOP-FU4RHC0&apos;, ip: &apos;192.168.1.3&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:111)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at com.newbikes.base.Base.openBrowser(Base.java:62)
+	at com.newbikes.test.GoogleSignInTest.testGoogleSignIn(GoogleSignInTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:122)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	... 33 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+	... 46 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace395752148", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace395752148'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;DESKTOP-FU4RHC0&apos;, ip: &apos;192.168.1.3&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:111)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at com.newbikes.base.Base.openBrowser(Base.java:62)
+	at com.newbikes.test.GoogleSignInTest.testGoogleSignIn(GoogleSignInTest.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:122)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	... 33 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+	... 46 more
+</pre></div></td>
+<td>189</td>
+<td>com.newbikes.test.GoogleSignInTest@797cf65c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.clickSignInButton()'><b>clickSignInButton</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td></td>
+<td>5</td>
+<td>com.newbikes.test.GoogleSignInTest@66ac5762</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.enterUserName()'><b>enterUserName</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td></td>
+<td>3</td>
+<td>com.newbikes.test.GoogleSignInTest@134d26af</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.getErrorMessage()'><b>getErrorMessage</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td></td>
+<td>4</td>
+<td>com.newbikes.test.GoogleSignInTest@66ac5762</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.clickSignInButton()'><b>clickSignInButton</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td></td>
+<td>4</td>
+<td>com.newbikes.test.GoogleSignInTest@134d26af</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.clickGoogleButton()'><b>clickGoogleButton</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td></td>
+<td>3</td>
+<td>com.newbikes.test.GoogleSignInTest@66ac5762</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.enterUserName()'><b>enterUserName</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td></td>
+<td>7</td>
+<td>com.newbikes.test.GoogleSignInTest@66ac5762</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.clickGoogleButton()'><b>clickGoogleButton</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td></td>
+<td>4</td>
+<td>com.newbikes.test.GoogleSignInTest@134d26af</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.getErrorMessage()'><b>getErrorMessage</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td></td>
+<td>4</td>
+<td>com.newbikes.test.GoogleSignInTest@134d26af</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.testGoogleSignIn()'><b>testGoogleSignIn</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td></td>
+<td>8</td>
+<td>com.newbikes.test.GoogleSignInTest@66ac5762</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.clickNextButton()'><b>clickNextButton</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td></td>
+<td>1</td>
+<td>com.newbikes.test.GoogleSignInTest@134d26af</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.testGoogleSignIn()'><b>testGoogleSignIn</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td></td>
+<td>15</td>
+<td>com.newbikes.test.GoogleSignInTest@134d26af</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.clickNextButton()'><b>clickNextButton</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td></td>
+<td>1</td>
+<td>com.newbikes.test.GoogleSignInTest@66ac5762</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.clickGoogleButton()'><b>clickGoogleButton</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@797cf65c depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@134d26af
+com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@66ac5762
+com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@797cf65c]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1136890657", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1136890657'><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@797cf65c depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@134d26af
+com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@66ac5762
+com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@797cf65c]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.GoogleSignInTest@797cf65c</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.enterUserName()'><b>enterUserName</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@797cf65c depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@134d26af
+com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@66ac5762
+com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@797cf65c]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1024266763", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1024266763'><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@797cf65c depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@134d26af
+com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@66ac5762
+com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@797cf65c]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.GoogleSignInTest@797cf65c</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.clickNextButton()'><b>clickNextButton</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@797cf65c depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@134d26af
+com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@66ac5762
+com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@797cf65c]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace886693791", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace886693791'><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@797cf65c depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@134d26af
+com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@66ac5762
+com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@797cf65c]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.GoogleSignInTest@797cf65c</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.getErrorMessage()'><b>getErrorMessage</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.getErrorMessage() on instance com.newbikes.test.GoogleSignInTest@797cf65c depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@134d26af
+com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@66ac5762
+com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@797cf65c]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1619034073", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1619034073'><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.getErrorMessage() on instance com.newbikes.test.GoogleSignInTest@797cf65c depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@134d26af
+com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@66ac5762
+com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@797cf65c]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.GoogleSignInTest@797cf65c</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.clickSignInButton()'><b>clickSignInButton</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@797cf65c depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.testGoogleSignIn() on instance com.newbikes.test.GoogleSignInTest@134d26af
+com.newbikes.test.GoogleSignInTest.testGoogleSignIn() on instance com.newbikes.test.GoogleSignInTest@66ac5762
+com.newbikes.test.GoogleSignInTest.testGoogleSignIn() on instance com.newbikes.test.GoogleSignInTest@797cf65c]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1622277947", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1622277947'><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@797cf65c depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.testGoogleSignIn() on instance com.newbikes.test.GoogleSignInTest@134d26af
+com.newbikes.test.GoogleSignInTest.testGoogleSignIn() on instance com.newbikes.test.GoogleSignInTest@66ac5762
+com.newbikes.test.GoogleSignInTest.testGoogleSignIn() on instance com.newbikes.test.GoogleSignInTest@797cf65c]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.GoogleSignInTest@797cf65c</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="27" total="51" passed="24" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-19T19:20:23 IST" name="Smoke Test Suite" finished-at="2023-01-19T19:21:42 IST" duration-ms="78971">
+    <groups>
+      <group name="usedCarsSmokeTest">
+        <method signature="UsedCarsTest.testUsedCars()[pri:1, instance:com.newbikes.test.UsedCarsTest@22ffa91a, instance params:[{Browser=Chrome}]]" name="testUsedCars" class="com.newbikes.test.UsedCarsTest"/>
+        <method signature="UsedCarsTest.testUsedCars()[pri:1, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" name="testUsedCars" class="com.newbikes.test.UsedCarsTest"/>
+        <method signature="UsedCarsTest.testUsedCars()[pri:1, instance:com.newbikes.test.UsedCarsTest@74960bfa, instance params:[{Browser=Edge}]]" name="testUsedCars" class="com.newbikes.test.UsedCarsTest"/>
+        <method signature="UsedCarsTest.hoverOnUsedCars()[pri:2, instance:com.newbikes.test.UsedCarsTest@22ffa91a, instance params:[{Browser=Chrome}]]" name="hoverOnUsedCars" class="com.newbikes.test.UsedCarsTest"/>
+        <method signature="UsedCarsTest.hoverOnUsedCars()[pri:2, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" name="hoverOnUsedCars" class="com.newbikes.test.UsedCarsTest"/>
+        <method signature="UsedCarsTest.hoverOnUsedCars()[pri:2, instance:com.newbikes.test.UsedCarsTest@74960bfa, instance params:[{Browser=Edge}]]" name="hoverOnUsedCars" class="com.newbikes.test.UsedCarsTest"/>
+        <method signature="UsedCarsTest.clickChennai()[pri:3, instance:com.newbikes.test.UsedCarsTest@22ffa91a, instance params:[{Browser=Chrome}]]" name="clickChennai" class="com.newbikes.test.UsedCarsTest"/>
+        <method signature="UsedCarsTest.clickChennai()[pri:3, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" name="clickChennai" class="com.newbikes.test.UsedCarsTest"/>
+        <method signature="UsedCarsTest.clickChennai()[pri:3, instance:com.newbikes.test.UsedCarsTest@74960bfa, instance params:[{Browser=Edge}]]" name="clickChennai" class="com.newbikes.test.UsedCarsTest"/>
+      </group> <!-- usedCarsSmokeTest -->
+      <group name="upcomingBikesSmokeTest">
+        <method signature="UpcomingBikesTest.testUpcomingBike()[pri:1, instance:com.newbikes.test.UpcomingBikesTest@30b19518, instance params:[{Manufacturer=Honda, Browser=Edge}]]" name="testUpcomingBike" class="com.newbikes.test.UpcomingBikesTest"/>
+        <method signature="UpcomingBikesTest.testUpcomingBike()[pri:1, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" name="testUpcomingBike" class="com.newbikes.test.UpcomingBikesTest"/>
+        <method signature="UpcomingBikesTest.testUpcomingBike()[pri:1, instance:com.newbikes.test.UpcomingBikesTest@7b84fcf8, instance params:[{Manufacturer=Honda, Browser=Chrome}]]" name="testUpcomingBike" class="com.newbikes.test.UpcomingBikesTest"/>
+        <method signature="UpcomingBikesTest.hoverOnNewBikesMenu()[pri:2, instance:com.newbikes.test.UpcomingBikesTest@30b19518, instance params:[{Manufacturer=Honda, Browser=Edge}]]" name="hoverOnNewBikesMenu" class="com.newbikes.test.UpcomingBikesTest"/>
+        <method signature="UpcomingBikesTest.hoverOnNewBikesMenu()[pri:2, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" name="hoverOnNewBikesMenu" class="com.newbikes.test.UpcomingBikesTest"/>
+        <method signature="UpcomingBikesTest.hoverOnNewBikesMenu()[pri:2, instance:com.newbikes.test.UpcomingBikesTest@7b84fcf8, instance params:[{Manufacturer=Honda, Browser=Chrome}]]" name="hoverOnNewBikesMenu" class="com.newbikes.test.UpcomingBikesTest"/>
+        <method signature="UpcomingBikesTest.clickUpcomingBikes()[pri:3, instance:com.newbikes.test.UpcomingBikesTest@30b19518, instance params:[{Manufacturer=Honda, Browser=Edge}]]" name="clickUpcomingBikes" class="com.newbikes.test.UpcomingBikesTest"/>
+        <method signature="UpcomingBikesTest.clickUpcomingBikes()[pri:3, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" name="clickUpcomingBikes" class="com.newbikes.test.UpcomingBikesTest"/>
+        <method signature="UpcomingBikesTest.clickUpcomingBikes()[pri:3, instance:com.newbikes.test.UpcomingBikesTest@7b84fcf8, instance params:[{Manufacturer=Honda, Browser=Chrome}]]" name="clickUpcomingBikes" class="com.newbikes.test.UpcomingBikesTest"/>
+      </group> <!-- upcomingBikesSmokeTest -->
+      <group name="googleSignInSmokeTest">
+        <method signature="GoogleSignInTest.testGoogleSignIn()[pri:1, instance:com.newbikes.test.GoogleSignInTest@134d26af, instance params:[{Username=testmail@gmail.com, Browser=Firefox}]]" name="testGoogleSignIn" class="com.newbikes.test.GoogleSignInTest"/>
+        <method signature="GoogleSignInTest.testGoogleSignIn()[pri:1, instance:com.newbikes.test.GoogleSignInTest@421bba99, instance params:[{Username=testmail@gmail.com, Browser=Chrome}]]" name="testGoogleSignIn" class="com.newbikes.test.GoogleSignInTest"/>
+        <method signature="GoogleSignInTest.testGoogleSignIn()[pri:1, instance:com.newbikes.test.GoogleSignInTest@5d12a356, instance params:[{Username=testmail@gmail.com, Browser=Edge}]]" name="testGoogleSignIn" class="com.newbikes.test.GoogleSignInTest"/>
+        <method signature="GoogleSignInTest.clickSignInButton()[pri:2, instance:com.newbikes.test.GoogleSignInTest@134d26af, instance params:[{Username=testmail@gmail.com, Browser=Firefox}]]" name="clickSignInButton" class="com.newbikes.test.GoogleSignInTest"/>
+        <method signature="GoogleSignInTest.clickSignInButton()[pri:2, instance:com.newbikes.test.GoogleSignInTest@421bba99, instance params:[{Username=testmail@gmail.com, Browser=Chrome}]]" name="clickSignInButton" class="com.newbikes.test.GoogleSignInTest"/>
+        <method signature="GoogleSignInTest.clickSignInButton()[pri:2, instance:com.newbikes.test.GoogleSignInTest@5d12a356, instance params:[{Username=testmail@gmail.com, Browser=Edge}]]" name="clickSignInButton" class="com.newbikes.test.GoogleSignInTest"/>
+      </group> <!-- googleSignInSmokeTest -->
+    </groups>
+    <test started-at="2023-01-19T19:20:23 IST" name="Google Sign In Smoke test" finished-at="2023-01-19T19:20:45 IST" duration-ms="21591">
+      <class name="com.newbikes.test.GoogleSignInTest">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.GoogleSignInTest@134d26af, instance params:[{Username=testmail@gmail.com, Browser=Firefox}]]" started-at="2023-01-19T19:20:23 IST" name="BeforeSuite" finished-at="2023-01-19T19:20:23 IST" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method signature="testGoogleSignIn()[pri:1, instance:com.newbikes.test.GoogleSignInTest@134d26af, instance params:[{Username=testmail@gmail.com, Browser=Firefox}]]" started-at="2023-01-19T19:20:23 IST" name="testGoogleSignIn" finished-at="2023-01-19T19:20:27 IST" duration-ms="4101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoogleSignIn -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.GoogleSignInTest@134d26af, instance params:[{Username=testmail@gmail.com, Browser=Firefox}]]" started-at="2023-01-19T19:20:27 IST" name="flush" finished-at="2023-01-19T19:20:28 IST" duration-ms="474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.GoogleSignInTest@134d26af, instance params:[{Username=testmail@gmail.com, Browser=Firefox}]]" started-at="2023-01-19T19:20:28 IST" name="BeforeSuite" finished-at="2023-01-19T19:20:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method signature="clickSignInButton()[pri:2, instance:com.newbikes.test.GoogleSignInTest@134d26af, instance params:[{Username=testmail@gmail.com, Browser=Firefox}]]" started-at="2023-01-19T19:20:28 IST" name="clickSignInButton" finished-at="2023-01-19T19:20:30 IST" depends-on-methods="com.newbikes.test.GoogleSignInTest.testGoogleSignIn" duration-ms="2494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSignInButton -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.GoogleSignInTest@134d26af, instance params:[{Username=testmail@gmail.com, Browser=Firefox}]]" started-at="2023-01-19T19:20:30 IST" name="flush" finished-at="2023-01-19T19:20:30 IST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.newbikes.test.GoogleSignInTest@134d26af, instance params:[{Username=testmail@gmail.com, Browser=Firefox}]]" started-at="2023-01-19T19:20:30 IST" name="tearDown" finished-at="2023-01-19T19:20:31 IST" duration-ms="832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.GoogleSignInTest@134d26af, instance params:[{Username=testmail@gmail.com, Browser=Firefox}]]" started-at="2023-01-19T19:20:31 IST" name="BeforeSuite" finished-at="2023-01-19T19:20:31 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method signature="testGoogleSignIn()[pri:1, instance:com.newbikes.test.GoogleSignInTest@421bba99, instance params:[{Username=testmail@gmail.com, Browser=Chrome}]]" started-at="2023-01-19T19:20:31 IST" name="testGoogleSignIn" finished-at="2023-01-19T19:20:34 IST" duration-ms="2616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoogleSignIn -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.GoogleSignInTest@134d26af, instance params:[{Username=testmail@gmail.com, Browser=Firefox}]]" started-at="2023-01-19T19:20:34 IST" name="flush" finished-at="2023-01-19T19:20:34 IST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.GoogleSignInTest@134d26af, instance params:[{Username=testmail@gmail.com, Browser=Firefox}]]" started-at="2023-01-19T19:20:34 IST" name="BeforeSuite" finished-at="2023-01-19T19:20:34 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method signature="clickSignInButton()[pri:2, instance:com.newbikes.test.GoogleSignInTest@421bba99, instance params:[{Username=testmail@gmail.com, Browser=Chrome}]]" started-at="2023-01-19T19:20:34 IST" name="clickSignInButton" finished-at="2023-01-19T19:20:36 IST" depends-on-methods="com.newbikes.test.GoogleSignInTest.testGoogleSignIn" duration-ms="1881" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSignInButton -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.GoogleSignInTest@134d26af, instance params:[{Username=testmail@gmail.com, Browser=Firefox}]]" started-at="2023-01-19T19:20:36 IST" name="flush" finished-at="2023-01-19T19:20:36 IST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.newbikes.test.GoogleSignInTest@134d26af, instance params:[{Username=testmail@gmail.com, Browser=Firefox}]]" started-at="2023-01-19T19:20:36 IST" name="tearDown" finished-at="2023-01-19T19:20:36 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.GoogleSignInTest@134d26af, instance params:[{Username=testmail@gmail.com, Browser=Firefox}]]" started-at="2023-01-19T19:20:36 IST" name="BeforeSuite" finished-at="2023-01-19T19:20:36 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method signature="testGoogleSignIn()[pri:1, instance:com.newbikes.test.GoogleSignInTest@5d12a356, instance params:[{Username=testmail@gmail.com, Browser=Edge}]]" started-at="2023-01-19T19:20:36 IST" name="testGoogleSignIn" finished-at="2023-01-19T19:20:42 IST" duration-ms="6175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoogleSignIn -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.GoogleSignInTest@134d26af, instance params:[{Username=testmail@gmail.com, Browser=Firefox}]]" started-at="2023-01-19T19:20:42 IST" name="flush" finished-at="2023-01-19T19:20:42 IST" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.GoogleSignInTest@134d26af, instance params:[{Username=testmail@gmail.com, Browser=Firefox}]]" started-at="2023-01-19T19:20:42 IST" name="BeforeSuite" finished-at="2023-01-19T19:20:42 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method signature="clickSignInButton()[pri:2, instance:com.newbikes.test.GoogleSignInTest@5d12a356, instance params:[{Username=testmail@gmail.com, Browser=Edge}]]" started-at="2023-01-19T19:20:42 IST" name="clickSignInButton" finished-at="2023-01-19T19:20:44 IST" depends-on-methods="com.newbikes.test.GoogleSignInTest.testGoogleSignIn" duration-ms="1645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSignInButton -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.GoogleSignInTest@134d26af, instance params:[{Username=testmail@gmail.com, Browser=Firefox}]]" started-at="2023-01-19T19:20:44 IST" name="flush" finished-at="2023-01-19T19:20:44 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.newbikes.test.GoogleSignInTest@134d26af, instance params:[{Username=testmail@gmail.com, Browser=Firefox}]]" started-at="2023-01-19T19:20:44 IST" name="tearDown" finished-at="2023-01-19T19:20:45 IST" duration-ms="387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.newbikes.test.GoogleSignInTest -->
+    </test> <!-- Google Sign In Smoke test -->
+    <test started-at="2023-01-19T19:20:45 IST" name="Upcoming Bikes Smoke test" finished-at="2023-01-19T19:21:14 IST" duration-ms="29075">
+      <class name="com.newbikes.test.UpcomingBikesTest">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:20:45 IST" name="BeforeSuite" finished-at="2023-01-19T19:20:45 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method signature="testUpcomingBike()[pri:1, instance:com.newbikes.test.UpcomingBikesTest@30b19518, instance params:[{Manufacturer=Honda, Browser=Edge}]]" started-at="2023-01-19T19:20:45 IST" name="testUpcomingBike" finished-at="2023-01-19T19:20:49 IST" duration-ms="4569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpcomingBike -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:20:49 IST" name="flush" finished-at="2023-01-19T19:20:49 IST" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:20:49 IST" name="BeforeSuite" finished-at="2023-01-19T19:20:50 IST" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method signature="hoverOnNewBikesMenu()[pri:2, instance:com.newbikes.test.UpcomingBikesTest@30b19518, instance params:[{Manufacturer=Honda, Browser=Edge}]]" started-at="2023-01-19T19:20:50 IST" name="hoverOnNewBikesMenu" finished-at="2023-01-19T19:20:51 IST" depends-on-methods="com.newbikes.test.UpcomingBikesTest.testUpcomingBike" duration-ms="1811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hoverOnNewBikesMenu -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:20:51 IST" name="flush" finished-at="2023-01-19T19:20:51 IST" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method signature="clickUpcomingBikes()[pri:3, instance:com.newbikes.test.UpcomingBikesTest@30b19518, instance params:[{Manufacturer=Honda, Browser=Edge}]]" started-at="2023-01-19T19:20:51 IST" name="clickUpcomingBikes" finished-at="2023-01-19T19:20:54 IST" depends-on-methods="com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu" duration-ms="2988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickUpcomingBikes -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:20:51 IST" name="BeforeSuite" finished-at="2023-01-19T19:20:51 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:20:54 IST" name="flush" finished-at="2023-01-19T19:20:55 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:20:55 IST" name="tearDown" finished-at="2023-01-19T19:20:55 IST" duration-ms="500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testUpcomingBike()[pri:1, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:20:55 IST" name="testUpcomingBike" finished-at="2023-01-19T19:20:59 IST" duration-ms="3535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpcomingBike -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:20:55 IST" name="BeforeSuite" finished-at="2023-01-19T19:20:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:20:59 IST" name="flush" finished-at="2023-01-19T19:20:59 IST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:20:59 IST" name="BeforeSuite" finished-at="2023-01-19T19:20:59 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method signature="hoverOnNewBikesMenu()[pri:2, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:20:59 IST" name="hoverOnNewBikesMenu" finished-at="2023-01-19T19:21:01 IST" depends-on-methods="com.newbikes.test.UpcomingBikesTest.testUpcomingBike" duration-ms="2354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hoverOnNewBikesMenu -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:21:01 IST" name="flush" finished-at="2023-01-19T19:21:01 IST" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:21:01 IST" name="BeforeSuite" finished-at="2023-01-19T19:21:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method signature="clickUpcomingBikes()[pri:3, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:21:01 IST" name="clickUpcomingBikes" finished-at="2023-01-19T19:21:03 IST" depends-on-methods="com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu" duration-ms="1620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickUpcomingBikes -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:21:03 IST" name="flush" finished-at="2023-01-19T19:21:03 IST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:21:03 IST" name="tearDown" finished-at="2023-01-19T19:21:04 IST" duration-ms="909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testUpcomingBike()[pri:1, instance:com.newbikes.test.UpcomingBikesTest@7b84fcf8, instance params:[{Manufacturer=Honda, Browser=Chrome}]]" started-at="2023-01-19T19:21:04 IST" name="testUpcomingBike" finished-at="2023-01-19T19:21:07 IST" duration-ms="3357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpcomingBike -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:21:04 IST" name="BeforeSuite" finished-at="2023-01-19T19:21:04 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:21:07 IST" name="flush" finished-at="2023-01-19T19:21:07 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:21:07 IST" name="BeforeSuite" finished-at="2023-01-19T19:21:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method signature="hoverOnNewBikesMenu()[pri:2, instance:com.newbikes.test.UpcomingBikesTest@7b84fcf8, instance params:[{Manufacturer=Honda, Browser=Chrome}]]" started-at="2023-01-19T19:21:07 IST" name="hoverOnNewBikesMenu" finished-at="2023-01-19T19:21:09 IST" depends-on-methods="com.newbikes.test.UpcomingBikesTest.testUpcomingBike" duration-ms="1863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hoverOnNewBikesMenu -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:21:09 IST" name="flush" finished-at="2023-01-19T19:21:09 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method signature="clickUpcomingBikes()[pri:3, instance:com.newbikes.test.UpcomingBikesTest@7b84fcf8, instance params:[{Manufacturer=Honda, Browser=Chrome}]]" started-at="2023-01-19T19:21:09 IST" name="clickUpcomingBikes" finished-at="2023-01-19T19:21:13 IST" depends-on-methods="com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu" duration-ms="4254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickUpcomingBikes -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:21:09 IST" name="BeforeSuite" finished-at="2023-01-19T19:21:09 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:21:13 IST" name="flush" finished-at="2023-01-19T19:21:13 IST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.newbikes.test.UpcomingBikesTest@363042d7, instance params:[{Manufacturer=Honda, Browser=Firefox}]]" started-at="2023-01-19T19:21:13 IST" name="tearDown" finished-at="2023-01-19T19:21:14 IST" duration-ms="329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.newbikes.test.UpcomingBikesTest -->
+    </test> <!-- Upcoming Bikes Smoke test -->
+    <test started-at="2023-01-19T19:21:14 IST" name="Used Cars Smoke test" finished-at="2023-01-19T19:21:42 IST" duration-ms="28245">
+      <class name="com.newbikes.test.UsedCarsTest">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:14 IST" name="BeforeSuite" finished-at="2023-01-19T19:21:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method signature="testUsedCars()[pri:1, instance:com.newbikes.test.UsedCarsTest@22ffa91a, instance params:[{Browser=Chrome}]]" started-at="2023-01-19T19:21:14 IST" name="testUsedCars" finished-at="2023-01-19T19:21:16 IST" duration-ms="2402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUsedCars -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:16 IST" name="flush" finished-at="2023-01-19T19:21:16 IST" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:16 IST" name="BeforeSuite" finished-at="2023-01-19T19:21:16 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method signature="hoverOnUsedCars()[pri:2, instance:com.newbikes.test.UsedCarsTest@22ffa91a, instance params:[{Browser=Chrome}]]" started-at="2023-01-19T19:21:16 IST" name="hoverOnUsedCars" finished-at="2023-01-19T19:21:18 IST" depends-on-methods="com.newbikes.test.UsedCarsTest.testUsedCars" duration-ms="1860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hoverOnUsedCars -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:18 IST" name="flush" finished-at="2023-01-19T19:21:18 IST" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method signature="clickChennai()[pri:3, instance:com.newbikes.test.UsedCarsTest@22ffa91a, instance params:[{Browser=Chrome}]]" started-at="2023-01-19T19:21:18 IST" name="clickChennai" finished-at="2023-01-19T19:21:22 IST" depends-on-methods="com.newbikes.test.UsedCarsTest.hoverOnUsedCars" duration-ms="3730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickChennai -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:18 IST" name="BeforeSuite" finished-at="2023-01-19T19:21:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:22 IST" name="flush" finished-at="2023-01-19T19:21:22 IST" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:22 IST" name="tearDown" finished-at="2023-01-19T19:21:22 IST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testUsedCars()[pri:1, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:22 IST" name="testUsedCars" finished-at="2023-01-19T19:21:26 IST" duration-ms="3758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUsedCars -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:22 IST" name="BeforeSuite" finished-at="2023-01-19T19:21:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:26 IST" name="flush" finished-at="2023-01-19T19:21:26 IST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:26 IST" name="BeforeSuite" finished-at="2023-01-19T19:21:26 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method signature="hoverOnUsedCars()[pri:2, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:26 IST" name="hoverOnUsedCars" finished-at="2023-01-19T19:21:29 IST" depends-on-methods="com.newbikes.test.UsedCarsTest.testUsedCars" duration-ms="2450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hoverOnUsedCars -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:29 IST" name="flush" finished-at="2023-01-19T19:21:29 IST" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:29 IST" name="BeforeSuite" finished-at="2023-01-19T19:21:29 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method signature="clickChennai()[pri:3, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:29 IST" name="clickChennai" finished-at="2023-01-19T19:21:31 IST" depends-on-methods="com.newbikes.test.UsedCarsTest.hoverOnUsedCars" duration-ms="2319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickChennai -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:31 IST" name="flush" finished-at="2023-01-19T19:21:32 IST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:32 IST" name="tearDown" finished-at="2023-01-19T19:21:33 IST" duration-ms="1425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:33 IST" name="BeforeSuite" finished-at="2023-01-19T19:21:33 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method signature="testUsedCars()[pri:1, instance:com.newbikes.test.UsedCarsTest@74960bfa, instance params:[{Browser=Edge}]]" started-at="2023-01-19T19:21:33 IST" name="testUsedCars" finished-at="2023-01-19T19:21:36 IST" duration-ms="3241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUsedCars -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:36 IST" name="flush" finished-at="2023-01-19T19:21:36 IST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:36 IST" name="BeforeSuite" finished-at="2023-01-19T19:21:36 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method signature="hoverOnUsedCars()[pri:2, instance:com.newbikes.test.UsedCarsTest@74960bfa, instance params:[{Browser=Edge}]]" started-at="2023-01-19T19:21:36 IST" name="hoverOnUsedCars" finished-at="2023-01-19T19:21:38 IST" depends-on-methods="com.newbikes.test.UsedCarsTest.testUsedCars" duration-ms="1846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hoverOnUsedCars -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:38 IST" name="flush" finished-at="2023-01-19T19:21:38 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method signature="clickChennai()[pri:3, instance:com.newbikes.test.UsedCarsTest@74960bfa, instance params:[{Browser=Edge}]]" started-at="2023-01-19T19:21:38 IST" name="clickChennai" finished-at="2023-01-19T19:21:41 IST" depends-on-methods="com.newbikes.test.UsedCarsTest.hoverOnUsedCars" duration-ms="3109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickChennai -->
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:38 IST" name="BeforeSuite" finished-at="2023-01-19T19:21:38 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:41 IST" name="flush" finished-at="2023-01-19T19:21:42 IST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.newbikes.test.UsedCarsTest@42721fe, instance params:[{Browser=Firefox}]]" started-at="2023-01-19T19:21:42 IST" name="tearDown" finished-at="2023-01-19T19:21:42 IST" duration-ms="422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.newbikes.test.UsedCarsTest -->
+    </test> <!-- Used Cars Smoke test -->
+  </suite> <!-- Smoke Test Suite -->
+</testng-results>

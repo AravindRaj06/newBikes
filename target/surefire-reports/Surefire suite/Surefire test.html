@@ -1,0 +1,1961 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/9/33</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 20 02:41:22 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>24 seconds (24931 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.newbikes.test.UpcomingBikesTest.tearDown()'><b>tearDown</b><br>Test class: com.newbikes.test.UpcomingBikesTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [e06c7747-b81c-448b-a3c0-6969b2c280f8, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.1, moz:accessibilityChecks: false, moz:buildID: 20221215175817, moz:debuggerAddress: 127.0.0.1:39639, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21460, moz:profile: C:\Users\Ashik\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:39639/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e06c7747-b81c-448b-a3c0-6969b2c280f8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:105)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1605741888", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1605741888'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [e06c7747-b81c-448b-a3c0-6969b2c280f8, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.1, moz:accessibilityChecks: false, moz:buildID: 20221215175817, moz:debuggerAddress: 127.0.0.1:39639, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21460, moz:profile: C:\Users\Ashik\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:39639/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e06c7747-b81c-448b-a3c0-6969b2c280f8
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:105)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UpcomingBikesTest@8c3619e</td></tr>
+<tr>
+<td title='com.newbikes.test.UsedCarsTest.tearDown()'><b>tearDown</b><br>Test class: com.newbikes.test.UsedCarsTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [39f313eb-cd06-47c3-be23-05d9a8a1c296, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.1, moz:accessibilityChecks: false, moz:buildID: 20221215175817, moz:debuggerAddress: 127.0.0.1:43703, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17368, moz:profile: C:\Users\Ashik\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:43703/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 39f313eb-cd06-47c3-be23-05d9a8a1c296
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:105)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace674925270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace674925270'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [39f313eb-cd06-47c3-be23-05d9a8a1c296, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.1, moz:accessibilityChecks: false, moz:buildID: 20221215175817, moz:debuggerAddress: 127.0.0.1:43703, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17368, moz:profile: C:\Users\Ashik\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:43703/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 39f313eb-cd06-47c3-be23-05d9a8a1c296
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:105)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UsedCarsTest@554e218</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.tearDown()'><b>tearDown</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d711b03d-07e1-46fa-8c3e-7d5b1a29ac6c, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.1, moz:accessibilityChecks: false, moz:buildID: 20221215175817, moz:debuggerAddress: 127.0.0.1:40649, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10744, moz:profile: C:\Users\Ashik\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:40649/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d711b03d-07e1-46fa-8c3e-7d5b1a29ac6c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:105)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1379186202", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1379186202'><pre>org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d711b03d-07e1-46fa-8c3e-7d5b1a29ac6c, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.1, moz:accessibilityChecks: false, moz:buildID: 20221215175817, moz:debuggerAddress: 127.0.0.1:40649, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10744, moz:profile: C:\Users\Ashik\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:40649/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d711b03d-07e1-46fa-8c3e-7d5b1a29ac6c
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:105)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.GoogleSignInTest@5a2d131d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.newbikes.test.UsedCarsTest.hoverOnUsedCars()'><b>hoverOnUsedCars</b><br>Test class: com.newbikes.test.UsedCarsTest</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.newbikes.test.UsedCarsTest.hoverOnUsedCars(UsedCarsTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace380390717", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace380390717'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.fail(Assert.java:115)
+	at com.newbikes.test.UsedCarsTest.hoverOnUsedCars(UsedCarsTest.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UsedCarsTest@6f63b475</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.clickSignInButton()'><b>clickSignInButton</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>java.lang.AssertionError: Failed to click the sign-in button
+	at com.newbikes.test.GoogleSignInTest.clickSignInButton(GoogleSignInTest.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1155844982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1155844982'><pre>java.lang.AssertionError: Failed to click the sign-in button
+	at org.testng.Assert.fail(Assert.java:110)
+	at com.newbikes.test.GoogleSignInTest.clickSignInButton(GoogleSignInTest.java:47)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.GoogleSignInTest@7a362b6b</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.clickSignInButton()'><b>clickSignInButton</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>java.lang.AssertionError: Failed to click the sign-in button
+	at com.newbikes.test.GoogleSignInTest.clickSignInButton(GoogleSignInTest.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace930695665", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace930695665'><pre>java.lang.AssertionError: Failed to click the sign-in button
+	at org.testng.Assert.fail(Assert.java:110)
+	at com.newbikes.test.GoogleSignInTest.clickSignInButton(GoogleSignInTest.java:47)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>1</td>
+<td>com.newbikes.test.GoogleSignInTest@5a2d131d</td></tr>
+<tr>
+<td title='com.newbikes.test.UsedCarsTest.hoverOnUsedCars()'><b>hoverOnUsedCars</b><br>Test class: com.newbikes.test.UsedCarsTest</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.newbikes.test.UsedCarsTest.hoverOnUsedCars(UsedCarsTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1758917774", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1758917774'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.fail(Assert.java:115)
+	at com.newbikes.test.UsedCarsTest.hoverOnUsedCars(UsedCarsTest.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UsedCarsTest@4331d187</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.clickSignInButton()'><b>clickSignInButton</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>java.lang.AssertionError: Failed to click the sign-in button
+	at com.newbikes.test.GoogleSignInTest.clickSignInButton(GoogleSignInTest.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace703841336", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace703841336'><pre>java.lang.AssertionError: Failed to click the sign-in button
+	at org.testng.Assert.fail(Assert.java:110)
+	at com.newbikes.test.GoogleSignInTest.clickSignInButton(GoogleSignInTest.java:47)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.GoogleSignInTest@60df60da</td></tr>
+<tr>
+<td title='com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu()'><b>hoverOnNewBikesMenu</b><br>Test class: com.newbikes.test.UpcomingBikesTest</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu(UpcomingBikesTest.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2001568374", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2001568374'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.fail(Assert.java:115)
+	at com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu(UpcomingBikesTest.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UpcomingBikesTest@3ad2e17</td></tr>
+<tr>
+<td title='com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu()'><b>hoverOnNewBikesMenu</b><br>Test class: com.newbikes.test.UpcomingBikesTest</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu(UpcomingBikesTest.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1191430552", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1191430552'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.fail(Assert.java:115)
+	at com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu(UpcomingBikesTest.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UpcomingBikesTest@8c3619e</td></tr>
+<tr>
+<td title='com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu()'><b>hoverOnNewBikesMenu</b><br>Test class: com.newbikes.test.UpcomingBikesTest</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu(UpcomingBikesTest.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2050410554", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2050410554'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.fail(Assert.java:115)
+	at com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu(UpcomingBikesTest.java:48)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UpcomingBikesTest@39a2bb97</td></tr>
+<tr>
+<td title='com.newbikes.test.UsedCarsTest.hoverOnUsedCars()'><b>hoverOnUsedCars</b><br>Test class: com.newbikes.test.UsedCarsTest</td>
+<td><div><pre>java.lang.AssertionError: null
+	at com.newbikes.test.UsedCarsTest.hoverOnUsedCars(UsedCarsTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1845922505", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1845922505'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.fail(Assert.java:115)
+	at com.newbikes.test.UsedCarsTest.hoverOnUsedCars(UsedCarsTest.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UsedCarsTest@554e218</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.newbikes.test.UsedCarsTest.testUsedCars()'><b>testUsedCars</b><br>Test class: com.newbikes.test.UsedCarsTest</td>
+<td></td>
+<td>1</td>
+<td>com.newbikes.test.UsedCarsTest@4331d187</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.testGoogleSignIn()'><b>testGoogleSignIn</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td></td>
+<td>1</td>
+<td>com.newbikes.test.GoogleSignInTest@7a362b6b</td></tr>
+<tr>
+<td title='com.newbikes.test.UpcomingBikesTest.testUpcomingBike()'><b>testUpcomingBike</b><br>Test class: com.newbikes.test.UpcomingBikesTest</td>
+<td></td>
+<td>2</td>
+<td>com.newbikes.test.UpcomingBikesTest@3ad2e17</td></tr>
+<tr>
+<td title='com.newbikes.test.UpcomingBikesTest.testUpcomingBike()'><b>testUpcomingBike</b><br>Test class: com.newbikes.test.UpcomingBikesTest</td>
+<td></td>
+<td>1</td>
+<td>com.newbikes.test.UpcomingBikesTest@8c3619e</td></tr>
+<tr>
+<td title='com.newbikes.test.UsedCarsTest.testUsedCars()'><b>testUsedCars</b><br>Test class: com.newbikes.test.UsedCarsTest</td>
+<td></td>
+<td>3</td>
+<td>com.newbikes.test.UsedCarsTest@6f63b475</td></tr>
+<tr>
+<td title='com.newbikes.test.UsedCarsTest.testUsedCars()'><b>testUsedCars</b><br>Test class: com.newbikes.test.UsedCarsTest</td>
+<td></td>
+<td>1</td>
+<td>com.newbikes.test.UsedCarsTest@554e218</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.testGoogleSignIn()'><b>testGoogleSignIn</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td></td>
+<td>3</td>
+<td>com.newbikes.test.GoogleSignInTest@5a2d131d</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.testGoogleSignIn()'><b>testGoogleSignIn</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td></td>
+<td>4</td>
+<td>com.newbikes.test.GoogleSignInTest@60df60da</td></tr>
+<tr>
+<td title='com.newbikes.test.UpcomingBikesTest.testUpcomingBike()'><b>testUpcomingBike</b><br>Test class: com.newbikes.test.UpcomingBikesTest</td>
+<td></td>
+<td>1</td>
+<td>com.newbikes.test.UpcomingBikesTest@39a2bb97</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.clickGoogleButton()'><b>clickGoogleButton</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2039840529", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2039840529'><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.GoogleSignInTest@5a2d131d</td></tr>
+<tr>
+<td title='com.newbikes.test.UpcomingBikesTest.printNewBikeModels()'><b>printNewBikeModels</b><br>Test class: com.newbikes.test.UpcomingBikesTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.printNewBikeModels() on instance com.newbikes.test.UpcomingBikesTest@8c3619e depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace468002913", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace468002913'><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.printNewBikeModels() on instance com.newbikes.test.UpcomingBikesTest@8c3619e depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UpcomingBikesTest@8c3619e</td></tr>
+<tr>
+<td title='com.newbikes.test.UsedCarsTest.clickChennai()'><b>clickChennai</b><br>Test class: com.newbikes.test.UsedCarsTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@6f63b475 depends on not successfully finished methods 
+[com.newbikes.test.UsedCarsTest.hoverOnUsedCars() on instance com.newbikes.test.UsedCarsTest@4331d187
+com.newbikes.test.UsedCarsTest.hoverOnUsedCars() on instance com.newbikes.test.UsedCarsTest@554e218
+com.newbikes.test.UsedCarsTest.hoverOnUsedCars() on instance com.newbikes.test.UsedCarsTest@6f63b475]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace521611410", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace521611410'><pre>java.lang.Throwable: Method com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@6f63b475 depends on not successfully finished methods 
+[com.newbikes.test.UsedCarsTest.hoverOnUsedCars() on instance com.newbikes.test.UsedCarsTest@4331d187
+com.newbikes.test.UsedCarsTest.hoverOnUsedCars() on instance com.newbikes.test.UsedCarsTest@554e218
+com.newbikes.test.UsedCarsTest.hoverOnUsedCars() on instance com.newbikes.test.UsedCarsTest@6f63b475]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UsedCarsTest@6f63b475</td></tr>
+<tr>
+<td title='com.newbikes.test.UpcomingBikesTest.clickViewMoreButton()'><b>clickViewMoreButton</b><br>Test class: com.newbikes.test.UpcomingBikesTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17 depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace588389652", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace588389652'><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17 depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UpcomingBikesTest@3ad2e17</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.clickGoogleButton()'><b>clickGoogleButton</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@60df60da depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace561133045", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace561133045'><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@60df60da depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.GoogleSignInTest@60df60da</td></tr>
+<tr>
+<td title='com.newbikes.test.UpcomingBikesTest.clickViewMoreButton()'><b>clickViewMoreButton</b><br>Test class: com.newbikes.test.UpcomingBikesTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@8c3619e depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1924108520", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1924108520'><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@8c3619e depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UpcomingBikesTest@8c3619e</td></tr>
+<tr>
+<td title='com.newbikes.test.UsedCarsTest.updateCarModelsInExcel()'><b>updateCarModelsInExcel</b><br>Test class: com.newbikes.test.UsedCarsTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.UsedCarsTest.updateCarModelsInExcel() on instance com.newbikes.test.UsedCarsTest@4331d187 depends on not successfully finished methods 
+[com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@4331d187
+com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@554e218
+com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@6f63b475]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace978881375", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace978881375'><pre>java.lang.Throwable: Method com.newbikes.test.UsedCarsTest.updateCarModelsInExcel() on instance com.newbikes.test.UsedCarsTest@4331d187 depends on not successfully finished methods 
+[com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@4331d187
+com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@554e218
+com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@6f63b475]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UsedCarsTest@4331d187</td></tr>
+<tr>
+<td title='com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes()'><b>clickUpcomingBikes</b><br>Test class: com.newbikes.test.UpcomingBikesTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17 depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace549160372", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace549160372'><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17 depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UpcomingBikesTest@3ad2e17</td></tr>
+<tr>
+<td title='com.newbikes.test.UpcomingBikesTest.selectManufacturer()'><b>selectManufacturer</b><br>Test class: com.newbikes.test.UpcomingBikesTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97 depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1004791660", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1004791660'><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97 depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UpcomingBikesTest@39a2bb97</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.getErrorMessage()'><b>getErrorMessage</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.getErrorMessage() on instance com.newbikes.test.GoogleSignInTest@5a2d131d depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace643434827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace643434827'><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.getErrorMessage() on instance com.newbikes.test.GoogleSignInTest@5a2d131d depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.GoogleSignInTest@5a2d131d</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.getErrorMessage()'><b>getErrorMessage</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.getErrorMessage() on instance com.newbikes.test.GoogleSignInTest@7a362b6b depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1128178348", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1128178348'><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.getErrorMessage() on instance com.newbikes.test.GoogleSignInTest@7a362b6b depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.GoogleSignInTest@7a362b6b</td></tr>
+<tr>
+<td title='com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes()'><b>clickUpcomingBikes</b><br>Test class: com.newbikes.test.UpcomingBikesTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97 depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1837581973", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1837581973'><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97 depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UpcomingBikesTest@39a2bb97</td></tr>
+<tr>
+<td title='com.newbikes.test.UpcomingBikesTest.printNewBikeModels()'><b>printNewBikeModels</b><br>Test class: com.newbikes.test.UpcomingBikesTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.printNewBikeModels() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17 depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1169933615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1169933615'><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.printNewBikeModels() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17 depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UpcomingBikesTest@3ad2e17</td></tr>
+<tr>
+<td title='com.newbikes.test.UsedCarsTest.clickAllPopularCars()'><b>clickAllPopularCars</b><br>Test class: com.newbikes.test.UsedCarsTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@4331d187 depends on not successfully finished methods 
+[com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@4331d187
+com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@554e218
+com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@6f63b475]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1409933277", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1409933277'><pre>java.lang.Throwable: Method com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@4331d187 depends on not successfully finished methods 
+[com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@4331d187
+com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@554e218
+com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@6f63b475]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UsedCarsTest@4331d187</td></tr>
+<tr>
+<td title='com.newbikes.test.UpcomingBikesTest.selectManufacturer()'><b>selectManufacturer</b><br>Test class: com.newbikes.test.UpcomingBikesTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@8c3619e depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace283968378", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace283968378'><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@8c3619e depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UpcomingBikesTest@8c3619e</td></tr>
+<tr>
+<td title='com.newbikes.test.UsedCarsTest.clickChennai()'><b>clickChennai</b><br>Test class: com.newbikes.test.UsedCarsTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@554e218 depends on not successfully finished methods 
+[com.newbikes.test.UsedCarsTest.hoverOnUsedCars() on instance com.newbikes.test.UsedCarsTest@4331d187
+com.newbikes.test.UsedCarsTest.hoverOnUsedCars() on instance com.newbikes.test.UsedCarsTest@554e218
+com.newbikes.test.UsedCarsTest.hoverOnUsedCars() on instance com.newbikes.test.UsedCarsTest@6f63b475]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1806062974", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1806062974'><pre>java.lang.Throwable: Method com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@554e218 depends on not successfully finished methods 
+[com.newbikes.test.UsedCarsTest.hoverOnUsedCars() on instance com.newbikes.test.UsedCarsTest@4331d187
+com.newbikes.test.UsedCarsTest.hoverOnUsedCars() on instance com.newbikes.test.UsedCarsTest@554e218
+com.newbikes.test.UsedCarsTest.hoverOnUsedCars() on instance com.newbikes.test.UsedCarsTest@6f63b475]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UsedCarsTest@554e218</td></tr>
+<tr>
+<td title='com.newbikes.test.UsedCarsTest.clickAllPopularCars()'><b>clickAllPopularCars</b><br>Test class: com.newbikes.test.UsedCarsTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@6f63b475 depends on not successfully finished methods 
+[com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@4331d187
+com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@554e218
+com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@6f63b475]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace472736752", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace472736752'><pre>java.lang.Throwable: Method com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@6f63b475 depends on not successfully finished methods 
+[com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@4331d187
+com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@554e218
+com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@6f63b475]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UsedCarsTest@6f63b475</td></tr>
+<tr>
+<td title='com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes()'><b>clickUpcomingBikes</b><br>Test class: com.newbikes.test.UpcomingBikesTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@8c3619e depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2041435954", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2041435954'><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@8c3619e depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.hoverOnNewBikesMenu() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UpcomingBikesTest@8c3619e</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.enterUserName()'><b>enterUserName</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@5a2d131d depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1256975947", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1256975947'><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@5a2d131d depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.GoogleSignInTest@5a2d131d</td></tr>
+<tr>
+<td title='com.newbikes.test.UsedCarsTest.updateCarModelsInExcel()'><b>updateCarModelsInExcel</b><br>Test class: com.newbikes.test.UsedCarsTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.UsedCarsTest.updateCarModelsInExcel() on instance com.newbikes.test.UsedCarsTest@6f63b475 depends on not successfully finished methods 
+[com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@4331d187
+com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@554e218
+com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@6f63b475]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1701756941", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1701756941'><pre>java.lang.Throwable: Method com.newbikes.test.UsedCarsTest.updateCarModelsInExcel() on instance com.newbikes.test.UsedCarsTest@6f63b475 depends on not successfully finished methods 
+[com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@4331d187
+com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@554e218
+com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@6f63b475]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UsedCarsTest@6f63b475</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.enterUserName()'><b>enterUserName</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@60df60da depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace416579056", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace416579056'><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@60df60da depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.GoogleSignInTest@60df60da</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.clickNextButton()'><b>clickNextButton</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@60df60da depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2096511898", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2096511898'><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@60df60da depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.GoogleSignInTest@60df60da</td></tr>
+<tr>
+<td title='com.newbikes.test.UpcomingBikesTest.selectManufacturer()'><b>selectManufacturer</b><br>Test class: com.newbikes.test.UpcomingBikesTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17 depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1812442475", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1812442475'><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17 depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.clickUpcomingBikes() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UpcomingBikesTest@3ad2e17</td></tr>
+<tr>
+<td title='com.newbikes.test.UsedCarsTest.clickAllPopularCars()'><b>clickAllPopularCars</b><br>Test class: com.newbikes.test.UsedCarsTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@554e218 depends on not successfully finished methods 
+[com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@4331d187
+com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@554e218
+com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@6f63b475]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1174000532", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1174000532'><pre>java.lang.Throwable: Method com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@554e218 depends on not successfully finished methods 
+[com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@4331d187
+com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@554e218
+com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@6f63b475]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UsedCarsTest@554e218</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.clickNextButton()'><b>clickNextButton</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1769605448", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1769605448'><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.GoogleSignInTest@5a2d131d</td></tr>
+<tr>
+<td title='com.newbikes.test.UsedCarsTest.clickChennai()'><b>clickChennai</b><br>Test class: com.newbikes.test.UsedCarsTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@4331d187 depends on not successfully finished methods 
+[com.newbikes.test.UsedCarsTest.hoverOnUsedCars() on instance com.newbikes.test.UsedCarsTest@4331d187
+com.newbikes.test.UsedCarsTest.hoverOnUsedCars() on instance com.newbikes.test.UsedCarsTest@554e218
+com.newbikes.test.UsedCarsTest.hoverOnUsedCars() on instance com.newbikes.test.UsedCarsTest@6f63b475]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1906057135", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1906057135'><pre>java.lang.Throwable: Method com.newbikes.test.UsedCarsTest.clickChennai() on instance com.newbikes.test.UsedCarsTest@4331d187 depends on not successfully finished methods 
+[com.newbikes.test.UsedCarsTest.hoverOnUsedCars() on instance com.newbikes.test.UsedCarsTest@4331d187
+com.newbikes.test.UsedCarsTest.hoverOnUsedCars() on instance com.newbikes.test.UsedCarsTest@554e218
+com.newbikes.test.UsedCarsTest.hoverOnUsedCars() on instance com.newbikes.test.UsedCarsTest@6f63b475]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UsedCarsTest@4331d187</td></tr>
+<tr>
+<td title='com.newbikes.test.UpcomingBikesTest.printNewBikeModels()'><b>printNewBikeModels</b><br>Test class: com.newbikes.test.UpcomingBikesTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.printNewBikeModels() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97 depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace178371348", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace178371348'><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.printNewBikeModels() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97 depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UpcomingBikesTest@39a2bb97</td></tr>
+<tr>
+<td title='com.newbikes.test.UsedCarsTest.updateCarModelsInExcel()'><b>updateCarModelsInExcel</b><br>Test class: com.newbikes.test.UsedCarsTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.UsedCarsTest.updateCarModelsInExcel() on instance com.newbikes.test.UsedCarsTest@554e218 depends on not successfully finished methods 
+[com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@4331d187
+com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@554e218
+com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@6f63b475]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace576909528", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace576909528'><pre>java.lang.Throwable: Method com.newbikes.test.UsedCarsTest.updateCarModelsInExcel() on instance com.newbikes.test.UsedCarsTest@554e218 depends on not successfully finished methods 
+[com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@4331d187
+com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@554e218
+com.newbikes.test.UsedCarsTest.clickAllPopularCars() on instance com.newbikes.test.UsedCarsTest@6f63b475]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UsedCarsTest@554e218</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.enterUserName()'><b>enterUserName</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@7a362b6b depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace674840194", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace674840194'><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@7a362b6b depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.GoogleSignInTest@7a362b6b</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.clickGoogleButton()'><b>clickGoogleButton</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1262573693", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1262573693'><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.clickGoogleButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.clickSignInButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.GoogleSignInTest@7a362b6b</td></tr>
+<tr>
+<td title='com.newbikes.test.UpcomingBikesTest.clickViewMoreButton()'><b>clickViewMoreButton</b><br>Test class: com.newbikes.test.UpcomingBikesTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97 depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace124666386", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace124666386'><pre>java.lang.Throwable: Method com.newbikes.test.UpcomingBikesTest.clickViewMoreButton() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97 depends on not successfully finished methods 
+[com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@39a2bb97
+com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@3ad2e17
+com.newbikes.test.UpcomingBikesTest.selectManufacturer() on instance com.newbikes.test.UpcomingBikesTest@8c3619e]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.UpcomingBikesTest@39a2bb97</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.getErrorMessage()'><b>getErrorMessage</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.getErrorMessage() on instance com.newbikes.test.GoogleSignInTest@60df60da depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2325213", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2325213'><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.getErrorMessage() on instance com.newbikes.test.GoogleSignInTest@60df60da depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.GoogleSignInTest@60df60da</td></tr>
+<tr>
+<td title='com.newbikes.test.GoogleSignInTest.clickNextButton()'><b>clickNextButton</b><br>Test class: com.newbikes.test.GoogleSignInTest</td>
+<td><div><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1198973449", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1198973449'><pre>java.lang.Throwable: Method com.newbikes.test.GoogleSignInTest.clickNextButton() on instance com.newbikes.test.GoogleSignInTest@7a362b6b depends on not successfully finished methods 
+[com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@5a2d131d
+com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@60df60da
+com.newbikes.test.GoogleSignInTest.enterUserName() on instance com.newbikes.test.GoogleSignInTest@7a362b6b]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>com.newbikes.test.GoogleSignInTest@7a362b6b</td></tr>
+</table><p>
+</body>
+</html>

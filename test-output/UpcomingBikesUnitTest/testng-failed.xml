@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="30" parallel="instances" name="Failed suite [UpcomingBikesUnitTest]" guice-stage="DEVELOPMENT" verbose="2">
+  <test thread-count="30" parallel="instances" name="UpcomingBikesTest(failed)" verbose="2">
+    <classes>
+      <class name="com.newbikes.test.UpcomingBikesTest">
+        <methods>
+          <include name="selectManufacturer" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="testUpcomingBike"/>
+          <include name="hoverOnNewBikesMenu" invocation-numbers="1"/>
+          <include name="flush"/>
+          <include name="BeforeSuite"/>
+          <include name="clickViewMoreButton" invocation-numbers="0 2"/>
+          <include name="printNewBikeModels"/>
+          <include name="clickUpcomingBikes" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.newbikes.test.UpcomingBikesTest -->
+    </classes>
+  </test> <!-- UpcomingBikesTest(failed) -->
+</suite> <!-- Failed suite [UpcomingBikesUnitTest] -->

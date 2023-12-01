@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke Test Suite">
+	<test name="Google Sign In Smoke test" thread-count="10"  group-by-instances="true">
+		<groups>
+			<run>
+				<include name="smokeTest"></include>
+				<include name="googleSignInSmokeTest"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.newbikes.test.GoogleSignInTest" />
+		</classes>
+	</test> 
+	<test name="Upcoming Bikes Smoke test" thread-count="10"  group-by-instances="true">
+		<groups>
+			<run>
+				<include name="smokeTest"></include>
+				<include name="upcomingBikesSmokeTest"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.newbikes.test.UpcomingBikesTest" />
+		</classes>
+	</test> 
+	<test name="Used Cars Smoke test" thread-count="10"  group-by-instances="true">
+		<groups>
+			<run>
+				<include name="smokeTest"></include>
+				<include name="usedCarsSmokeTest"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.newbikes.test.UsedCarsTest" />
+		</classes>
+	</test> 
+</suite> <!-- Smoke Test Suite -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [GoogleSignInUnitTest]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GoogleSignInTest(failed)">
+    <classes>
+      <class name="com.newbikes.test.GoogleSignInTest">
+        <methods>
+          <include name="clickGoogleButton"/>
+          <include name="getErrorMessage"/>
+          <include name="tearDown"/>
+          <include name="testGoogleSignIn" invocation-numbers="2"/>
+          <include name="clickSignInButton"/>
+          <include name="enterUserName"/>
+          <include name="flush"/>
+          <include name="BeforeSuite"/>
+          <include name="clickNextButton"/>
+        </methods>
+      </class> <!-- com.newbikes.test.GoogleSignInTest -->
+    </classes>
+  </test> <!-- GoogleSignInTest(failed) -->
+</suite> <!-- Failed suite [GoogleSignInUnitTest] -->

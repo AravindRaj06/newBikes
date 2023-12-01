@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoke Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Upcoming Bikes Smoke test(failed)">
+    <groups>
+      <run>
+        <include name="smokeTest"/>
+        <include name="upcomingBikesSmokeTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.newbikes.test.UpcomingBikesTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testUpcomingBike"/>
+          <include name="hoverOnNewBikesMenu"/>
+          <include name="flush"/>
+          <include name="BeforeSuite"/>
+          <include name="clickUpcomingBikes" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.newbikes.test.UpcomingBikesTest -->
+    </classes>
+  </test> <!-- Upcoming Bikes Smoke test(failed) -->
+</suite> <!-- Failed suite [Smoke Test Suite] -->

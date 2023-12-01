@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [IdentifyBikes Regression Test]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GoogleSignInTest(failed)">
+    <classes>
+      <class name="com.newbikes.test.GoogleSignInTest">
+        <methods>
+          <include name="clickGoogleButton"/>
+          <include name="getErrorMessage"/>
+          <include name="tearDown"/>
+          <include name="testGoogleSignIn" invocation-numbers="2"/>
+          <include name="enterUserName"/>
+          <include name="clickSignInButton"/>
+          <include name="flush"/>
+          <include name="BeforeSuite"/>
+          <include name="clickNextButton"/>
+        </methods>
+      </class> <!-- com.newbikes.test.GoogleSignInTest -->
+    </classes>
+  </test> <!-- GoogleSignInTest(failed) -->
+  <test thread-count="5" name="UpcomingBikesTest(failed)">
+    <classes>
+      <class name="com.newbikes.test.UpcomingBikesTest">
+        <methods>
+          <include name="selectManufacturer"/>
+          <include name="tearDown"/>
+          <include name="testUpcomingBike"/>
+          <include name="hoverOnNewBikesMenu"/>
+          <include name="flush"/>
+          <include name="BeforeSuite"/>
+          <include name="clickViewMoreButton"/>
+          <include name="printNewBikeModels"/>
+          <include name="clickUpcomingBikes" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.newbikes.test.UpcomingBikesTest -->
+    </classes>
+  </test> <!-- UpcomingBikesTest(failed) -->
+  <test thread-count="5" name="UsedCarsTest(failed)">
+    <classes>
+      <class name="com.newbikes.test.UsedCarsTest">
+        <methods>
+          <include name="testUsedCars"/>
+          <include name="tearDown"/>
+          <include name="clickChennai" invocation-numbers="1"/>
+          <include name="hoverOnUsedCars"/>
+          <include name="flush"/>
+          <include name="BeforeSuite"/>
+          <include name="clickAllPopularCars"/>
+          <include name="updateCarModelsInExcel"/>
+        </methods>
+      </class> <!-- com.newbikes.test.UsedCarsTest -->
+    </classes>
+  </test> <!-- UsedCarsTest(failed) -->
+</suite> <!-- Failed suite [IdentifyBikes Regression Test] -->
